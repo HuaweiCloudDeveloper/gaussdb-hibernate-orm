@@ -279,6 +279,8 @@
                             <extensions>true</extensions>
                             <configuration>
                                 <publishingServerId>central</publishingServerId>
+                                <autoPublish>true</autoPublish>
+                                <waitUntil>published</waitUntil>
                             </configuration>
                         </plugin>
                     </plugins>
@@ -300,14 +302,6 @@
                 </plugins>
 
             </build>
-
-            <distributionManagement>
-                <repository>
-                    <id>sonatype</id>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-                </repository>
-            </distributionManagement>
-
         </profile>
 
     </profiles>
